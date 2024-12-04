@@ -1,7 +1,9 @@
 import React from "react";
 
-export default function Now() {
+const Now = () => {
     return (
         <p>Now page</p>
     )
 }
+
+export default Now;

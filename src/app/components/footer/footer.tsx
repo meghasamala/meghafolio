@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function Footer() {
+const Footer = () => {
     return(
         <footer>
             <p>&copy; Megha Samala 2024</p>
         </footer>
     )
 }
+
+export default Footer;

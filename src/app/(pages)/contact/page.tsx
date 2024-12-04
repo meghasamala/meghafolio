@@ -1,12 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ContactForm from "@/app/components/contactform/contactForm";
 
-export default function Contact() {
+const Contact = () => {
     return (
         <>
             <h2>Contact Me</h2>
-            <p>You can contact me at <Link href={"mailto:msamala@bu.edu"}>msamala@bu.edu</Link>.</p>
+            <p>You can contact me by sending a message here:</p>
+            <ContactForm />
             <p>You can also learn more about my work/projects by clicking the links below:</p>
                 {/* icons downloaded from icons8 website  */}
                 {/* https://icons8.com/icon/set/linkedin/glyph-neue */}
@@ -29,3 +31,5 @@ export default function Contact() {
         </>
     )
 }
+
+export default Contact;

@@ -31,7 +31,9 @@ const Carousel = ({ pics } : {pics : any}) => {
                             <Photo
                             image={pic.image}
                             alt={pic.alt}
-                            desc={pic.desc} />
+                            desc={pic.desc}
+                            width={600}
+                            height={450} />
                             }                   
                         </div>
                         

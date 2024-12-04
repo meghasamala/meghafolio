@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../components/footer/footer";
-import Header from "../components/header/header";
+import Navbar from "../components/navbar/navbar";
+import Link from "next/link";
 
 export default function Layout({
   children,
@@ -9,9 +10,14 @@ export default function Layout({
 }>) {
   return (
       <>
-        <Header></Header>
+      <h2>
+          <Link href={"/"}>
+          <h1>Megha Samala</h1>
+          </Link>
+      </h2>
+        <Navbar/>
         {children}
-        <Footer></Footer>
+        <Footer/>
       </>
   );
 }

@@ -1,0 +1,30 @@
+[
+    {
+        "name": "About",
+        "path": "/about"
+    },
+    {
+        "name": "Projects",
+        "path": "/projects"
+    },
+    {
+        "name": "Resume",
+        "path": "/resume"
+    },
+    {
+        "name": "Now",
+        "path": "/now"
+    },
+    {
+        "name": "Favorites",
+        "path": "/favorites"
+    },
+    {
+        "name": "Travels",
+        "path": "/travels"
+    },
+    {
+        "name": "Contact",
+        "path": "/contact"
+    }
+]

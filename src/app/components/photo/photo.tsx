@@ -5,17 +5,19 @@ interface PhotoProps {
     image: string;
     alt: string;
     desc?: string;
+    width: number;
+    height: number;
 }
 
 export default function Photo(props: PhotoProps) {
-    const { image, alt, desc } = props;
+    const { image, alt, desc, width, height } = props;
 
     return (
         <div>
             <Image 
                 src={image}
-                width={600}
-                height={450}
+                width={width}
+                height={height}
                 alt={alt}
             />
             {(desc) && <p>{desc}</p>}

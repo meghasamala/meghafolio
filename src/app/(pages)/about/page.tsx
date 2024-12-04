@@ -6,7 +6,7 @@ const About = () => {
     return (
         <>
             <h2>About Me</h2>
-            <Photo image={"/IMG_1383.jpg"} alt="a picture of me in new york"/>
+            <Photo image={"/IMG_1383.jpg"} width={400} height={300} alt="a picture of me in new york"/>
             <p id="personal-info">
                 Hi, my name is Megha and I am an aspiring full stack web developer.
                 I am currently enrolled in the CIS Master&apos;s program at BU, and I graduated
