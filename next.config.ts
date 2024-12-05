@@ -6,8 +6,8 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'lastfm.freetls.fastly.net',
-        // port: '',
-        // pathname: '/account123/**',
+        port: '',
+        pathname: '**',
       },
     ],
   },

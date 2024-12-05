@@ -3,30 +3,40 @@
         "image": "/IMG_0075.JPG",
         "alt": "",
         "desc": "",
-        "place": "spain"
+        "place": "spain",
+        "width": 600,
+        "height": 450
     },
     {
         "image": "/IMG_0093.JPG",
         "alt": "",
         "desc": "",
-        "place": "spain"
+        "place": "spain",
+        "width": 600,
+        "height": 450
     },
     {
         "image": "/IMG_0112.JPG",
         "alt": "",
         "desc": "",
-        "place": "spain"
+        "place": "spain",
+        "width": 600,
+        "height": 450
     },
     {
         "image": "/IMG_0329.JPG",
         "alt": "",
         "desc": "",
-        "place": "spain"
+        "place": "spain",
+        "width": 600,
+        "height": 450
     },
     {
         "image": "/IMG_0643.JPG",
         "alt": "",
         "desc": "",
-        "place": "spain"
+        "place": "spain",
+        "width": 600,
+        "height": 450
     }
 ]

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 import { useState, useEffect } from "react";
 
@@ -10,24 +11,19 @@ const lastfm = ({method} : {method : string}, {limit} : {limit : number}) => {
     const [lfData, updateLfData] = useState();
 
     useEffect(() => {
-        const getData = async () => {
-            try {
-                const response = await fetch(`http://ws.audioscrobbler.com/2.0/?method=${method}&user=${username}&api_key=${apiKey}&format=json&limit=${limit}`);
-                if (!response.ok) {
-                    throw new Error(`${response.status}`);
-                }
-                const data = await response.json();
-                return data;
-        
-            } catch (error) {
-                console.error(error);
-            }
-        }
 
-        getData().then(data => {
+        fetch(`http://ws.audioscrobbler.com/2.0/?method=${method}&user=${username}&api_key=${apiKey}&format=json&limit=${limit}`)
+        .then(response => {
+            if (response.ok) {
+            const data = response.json();
+            return data
+        }
+        throw new Error(`${response.status}`)
+        })
+        .then((data) => {
             updateLfData(data)
         })
-        .catch(error => console.log(error))
+        .catch((error: any) => console.log(error))
 
     }, [])
 
