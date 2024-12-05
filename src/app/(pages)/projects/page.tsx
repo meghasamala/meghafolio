@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <>
             <h2>Projects</h2>
-            <p>Here are a few of the projects I&apos;ve worked on over the past few years.</p>
+            <p>Here are a few of the projects I&apos;ve worked on over the past few years:</p>
             <div>
                 {projects.map((project) => 
                     <Project 

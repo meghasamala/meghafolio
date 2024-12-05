@@ -1,0 +1,23 @@
+[
+    {
+        "image": "/derrygirls.jpg",
+        "alt": "Derry Girls",
+        "desc": "Derry Girls",
+        "width": 709,
+        "height": 472
+    },
+    {
+        "image": "/fmab.jpg",
+        "alt": "Fullmetal Alchemist: Brotherhood",
+        "desc": "Fullmetal Alchemist: Brotherhood",
+        "width": 600,
+        "height": 338
+    },
+    {
+        "image": "/cowbop.jpg",
+        "alt": "Cowboy Bebop",
+        "desc": "Cowboy Bebop",
+        "width": 739,
+        "height": 374
+    }
+]

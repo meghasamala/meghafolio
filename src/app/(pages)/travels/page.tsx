@@ -9,7 +9,7 @@ const Travels = () => {
     return (
         <>
             <h2>Travels</h2>
-            <p>Here are pictures from a few of the places I&apos;ve been recently!</p>
+            <p>Here are pictures from a few of the places I&apos;ve been recently:</p>
 
             <h3>Japan</h3>
             <Carousel pics={japanPics}/>
