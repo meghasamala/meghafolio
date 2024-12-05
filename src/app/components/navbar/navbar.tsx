@@ -12,6 +12,7 @@ const Navbar = () => {
                     {navLinks.map((link) => 
                         <Link key={link.name} href={link.path} replace>{link.name}</Link>
                     )}
+                    <Link href={"/meghasResume3.pdf"} target="_blank" rel="noopener noreferrer">Resume</Link>
                 </div>
             </nav>
         </header>

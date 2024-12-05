@@ -26,11 +26,11 @@ const FavoriteAlbums = () => {
         })
     }
 
-    console.log(topAlbums);
+    // console.log(topAlbums);
 
     return (
         <>
-        <Carousel pics={topAlbums}/>   
+            <Carousel pics={topAlbums}/>   
         </>
         
     )

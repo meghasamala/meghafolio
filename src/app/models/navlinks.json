@@ -8,10 +8,6 @@
         "path": "/projects"
     },
     {
-        "name": "Resume",
-        "path": "/resume"
-    },
-    {
         "name": "Now",
         "path": "/now"
     },
