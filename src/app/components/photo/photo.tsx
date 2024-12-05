@@ -9,7 +9,7 @@ interface PhotoProps {
     height: number;
 }
 
-export default function Photo(props: PhotoProps) {
+const Photo = (props: PhotoProps) => {
     const { image, alt, desc, width, height } = props;
 
     return (
@@ -24,3 +24,5 @@ export default function Photo(props: PhotoProps) {
         </div>
     )
 }
+
+export default Photo;

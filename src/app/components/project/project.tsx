@@ -12,7 +12,7 @@ interface ProjectProps {
     deploy?: string;
 }
 
-export default function Project(props: ProjectProps) {
+const Project = (props: ProjectProps) => {
     const { name, desc, tech, image, repo, deploy } = props;
 
     return (
@@ -28,3 +28,5 @@ export default function Project(props: ProjectProps) {
         </div>
     )
 }
+
+export default Project;
