@@ -10,7 +10,7 @@ const FavoriteAlbums = () => {
     
     const favAlbumsData : any = lastfm({method : "user.gettopalbums"}, {limit : 7});
     const albums : Array<object> = favAlbumsData?.topalbums?.album
-    // console.log(albums)
+    console.log(albums)
 
     const topAlbums = []
 

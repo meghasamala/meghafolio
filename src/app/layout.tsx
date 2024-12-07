@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/styles.css";
 import localFont from 'next/font/local'
 import { Fraunces } from 'next/font/google';
+import Head from "next/head";
 
 const fraunces = Fraunces({
   weight: ["200","300","600","700"],
@@ -22,6 +23,9 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
+      <Head>
+        <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+      </Head>
       <body className={`${authenticSans.variable} ${fraunces.variable}`}>
         {children}
       </body>
