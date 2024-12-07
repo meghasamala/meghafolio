@@ -3,15 +3,17 @@ import Navbar from "./components/navbar/navbar";
 import Link from "next/link";
 
 
-export default function Home() {
+const Home = () => {
   return (
-    <div>
+    <main className="landing-div">
       <h1>
           <Link href={"/"}>
               <h1>Megha Samala</h1>
           </Link>
       </h1>
       <Navbar />
-    </div>
+    </main>
   );
 };
+
+export default Home;

@@ -7,7 +7,7 @@ import shows from "../../models/shows.json";
 
 const Favorites = () => {
     return (
-        <>
+        <main className="favs">
             <h2>Favorites</h2>
             <p>Here are some of my favorite things:</p>
             <div className="fav-box">
@@ -26,7 +26,7 @@ const Favorites = () => {
                 <h3>Albums:</h3>
                 <FavoriteAlbums/>
             </div>
-        </>
+        </main>
     )
 }
 

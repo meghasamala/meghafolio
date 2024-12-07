@@ -1,0 +1,25 @@
+
+.bigDiv {
+    flex: 1;
+    /* margin-top: 10px; */
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 30px;
+}
+
+.aboutDiv{
+    height: 100%;
+    /* margin-top: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 30px; */
+    padding: 30px;
+    background-color: var(--green);
+}
+
+.about h2 {
+    padding: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: var(--pink);
+}

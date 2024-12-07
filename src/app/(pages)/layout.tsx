@@ -1,7 +1,13 @@
 import React from "react";
 import Footer from "../components/footer/footer";
-import Navbar from "../components/navbar/navbar";
-import Link from "next/link";
+import Header from "../components/header/header";
+
+// import { Fraunces } from 'next/font/google';
+
+// const fraunces = Fraunces({
+//   weight: "700",
+//   subsets: ['latin']
+// })
 
 export default function Layout({
   children,
@@ -10,12 +16,7 @@ export default function Layout({
 }>) {
   return (
       <>
-      <h2>
-          <Link href={"/"}>
-          <h1>Megha Samala</h1>
-          </Link>
-      </h2>
-        <Navbar/>
+        <Header/>
         {children}
         <Footer/>
       </>

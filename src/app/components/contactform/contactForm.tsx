@@ -1,5 +1,6 @@
 import React from "react";
 // import Form from "next/form";
+import Button from "../button/button";
 
 const ContactForm = () => {
     return (
@@ -10,7 +11,7 @@ const ContactForm = () => {
             <input type="email" id="email" name="email" required /><br/>
             <label htmlFor="message">Message:</label><br/>
             <textarea id="message" name="message" required /><br/>
-            <button>Send Message</button>
+            <Button type="submit" name="Send Message"/>
         </form>
     )
 }

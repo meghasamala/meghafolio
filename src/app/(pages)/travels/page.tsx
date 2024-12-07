@@ -7,7 +7,7 @@ import greecePics from "../../models/greecepics.json"
 const Travels = () => {
 
     return (
-        <>
+        <main className="travels">
             <h2>Travels</h2>
             <p>Here are pictures from a few of the places I&apos;ve been recently:</p>
 
@@ -18,9 +18,8 @@ const Travels = () => {
             <Carousel pics={spainPics}/>
 
             <h3>Greece</h3>
-            <Carousel pics={greecePics}/>
-            
-        </>
+            <Carousel pics={greecePics}/>           
+        </main>
     )
 }
 

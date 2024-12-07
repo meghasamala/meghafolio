@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../../(pages)/projects/projects.module.css"
 
 // https://react.dev/learn/typescript
 interface ProjectProps {
@@ -16,7 +17,7 @@ const Project = (props: ProjectProps) => {
     const { name, desc, tech, image, repo, deploy } = props;
 
     return (
-        <div className="project">
+        <div className={styles.project}>
             <h2>{name}</h2>
             <p>{desc}</p>
             <p>Technologies used: <span>{tech}</span></p>

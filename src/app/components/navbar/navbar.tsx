@@ -5,7 +5,6 @@ import navLinks from "../../models/navlinks.json";
 const Navbar = () => {
 
     return (
-        <header>
             <nav>
                 <div>
                     {/* https://nextjs.org/learn/dashboard-app/navigating-between-pages */}
@@ -15,7 +14,6 @@ const Navbar = () => {
                     <Link href={"/meghasResume3.pdf"} target="_blank" rel="noopener noreferrer">Resume</Link>
                 </div>
             </nav>
-        </header>
     )
 }
 

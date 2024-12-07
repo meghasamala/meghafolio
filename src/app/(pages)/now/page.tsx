@@ -2,10 +2,11 @@ import React from "react";
 import NowPlaying from "@/app/components/nowplaying/nowPlaying";
 import Photo from "@/app/components/photo/photo";
 import nowPics from "../../models/nowPics.json";
+import styles from "../now/now.module.css"
 
 const Now = () => {
     return (
-        <>
+        <main className={styles.now}>
             <h2>Now</h2>
             <p>Here is what I have been up to lately:</p>
             <div className="now-box">
@@ -48,7 +49,7 @@ const Now = () => {
                 width={nowPics[2].width}
                 height={nowPics[2].height}/>
             </div>
-        </>
+        </main>
     )
 }
 

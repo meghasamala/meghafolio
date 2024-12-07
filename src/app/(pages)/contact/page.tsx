@@ -5,7 +5,7 @@ import ContactForm from "@/app/components/contactform/contactForm";
 
 const Contact = () => {
     return (
-        <>
+        <main className="contact">
             <h2>Contact Me</h2>
             <p>You can contact me by sending a message here:</p>
             <ContactForm />
@@ -28,7 +28,7 @@ const Contact = () => {
                 height={64} 
                 alt="Github icon"/>
             </Link>
-        </>
+        </main>
     )
 }
 

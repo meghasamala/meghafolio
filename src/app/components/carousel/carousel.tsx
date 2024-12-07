@@ -2,6 +2,7 @@
 'use client';
 import React, { useState } from "react";
 import Photo from "../photo/photo";
+import Button from "../button/button";
 
 // reference used: https://www.newline.co/@andreeamaco/react-carousel-building-the-component-from-scratch-vs-using-a-library--7da468d4
 
@@ -39,8 +40,8 @@ const Carousel = ({ pics } : {pics : any}) => {
                         
                     );
                 })}
-                <button onClick={backward}>Prev</button>
-                <button onClick={forward}>Next</button>
+                <Button type="button" onclick={backward} name="Prev"/>
+                <Button type="button" onclick={forward} name="Next"/>
             </div>
         </>
     )
