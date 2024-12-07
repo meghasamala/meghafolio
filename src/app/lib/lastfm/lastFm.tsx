@@ -12,7 +12,7 @@ const lastfm = ({method} : {method : string}, {limit} : {limit : number}) => {
 
     useEffect(() => {
 
-        fetch(`http://ws.audioscrobbler.com/2.0/?method=${method}&user=${username}&api_key=${apiKey}&format=json&limit=${limit}`)
+        fetch(`https://ws.audioscrobbler.com/2.0/?method=${method}&user=${username}&api_key=${apiKey}&format=json&limit=${limit}`)
         .then(response => {
             if (response.ok) {
             const data = response.json();
