@@ -3,6 +3,7 @@ import "./styles/styles.css";
 import localFont from 'next/font/local'
 import { Fraunces } from 'next/font/google';
 import type { Viewport } from 'next'
+import Head from "next/head";
 
 const fraunces = Fraunces({
   weight: ["200","300","600","700"],
@@ -28,6 +29,9 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
+      <Head>
+        <title>Megha&apos;s Personal Website</title>
+      </Head>
       <body className={`${authenticSans.variable} ${fraunces.variable}`}>
         {children}
       </body>

@@ -22,12 +22,12 @@ const Now = () => {
                         <li>Improving my electric bass skills</li>
                         <li>Internship applications</li>
                         <li>This website!</li>
-                        <Photo 
+                    </ul>
+                    <Photo 
                         image={`https://smiski.com/e/wp-content/uploads/2019/09/img_yoga_01.png`}
                         alt="smiski meditating"
                         width={300}
                         height={300}/>
-                    </ul>
                 </div>
                 <div className="now-box" id="three">
                     <div className={styles.nowTitleBox}>
