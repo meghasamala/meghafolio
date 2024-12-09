@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 // https://www.last.fm/api/intro
 
 const lastfm = ({method} : {method : string}, {limit} : {limit : number}) => {
-    const username = "megsamala"
+    const username = process.env.NEXT_PUBLIC_LASTFM_USERNAME
     const apiKey = process.env.NEXT_PUBLIC_API_KEY;
     const [lfData, updateLfData] = useState();
 
