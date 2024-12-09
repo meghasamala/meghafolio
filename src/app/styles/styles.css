@@ -89,6 +89,7 @@ a {
 }
 
 button {
+  color: black;
   background-color: var(--green);
   border-style: none;
   font-family: var(--font-authenticsans);
