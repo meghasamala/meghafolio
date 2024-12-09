@@ -18,9 +18,13 @@ const Project = (props: ProjectProps) => {
 
     return (
         <div className={styles.project}>
-            <h2>{name}</h2>
-            <p>{desc}</p>
-            <p>Technologies used: <span>{tech}</span></p>
+            <div className={styles.projDesc}>
+                <div className={styles.projTitleBox}>
+                    <h3>{name}</h3>
+                </div>
+                <p>{desc}</p>
+                <p>Technologies used: <span>{tech}</span></p>
+            </div>
             <div className="project-img">
                 <Image src={image} width={600} height={350} alt={name}/>
             </div>

@@ -1,22 +1,9 @@
-.projects {
+.travels {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-
-}
-.projectsDiv{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    /* column-gap: 50px; */
-    padding-bottom: 15px;
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
 }
 
 .topDiv {
@@ -48,7 +35,7 @@
     justify-content: center;
 }
 
-.project {
+.travel {
     padding: 5px;
     /* background-color: aliceblue; */
     /* margin-left: 30px;
@@ -57,19 +44,14 @@
     /* width: max-content; */
 }
 
-.project p, .project h3{
-    padding: 10px;
-    margin: 0px;
-}
-
-.projTitleBox {
+.travTitleBox {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.project h3 {
+.travel h3 {
     /* margin-right: 150px;
     margin-left: 150px; */
     background-color: var(--pink);
@@ -78,30 +60,8 @@
     flex-shrink: 0;
 }
 
-/* .project p {
-    margin-right: 100px;
-    margin-left: 100px;
-} */
 
-.project a {
-    background-color: var(--green);
-}
-
-.project a:hover {
-    background-color: var(--pink);
-}
-
-/* tablets */
-@media screen and (max-width: 1024px) {
-    .projectsDiv {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* phones */
-@media screen and (max-width: 600px) {
-    .projectsDiv {
-        grid-template-columns: 1fr;
-    }
-
+.travel p, .travel h3{
+    padding: 10px;
+    margin: 0px;
 }

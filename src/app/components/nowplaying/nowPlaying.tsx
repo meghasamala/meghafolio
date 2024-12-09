@@ -20,7 +20,14 @@ const NowPlaying = () => {
 
     if (!currentTrack || !currentTrack['@attr'] || !currentTrack['@attr'].nowplaying) {
         return (
-            <p>{`Not currently listening to anything! Check back later :^)`}</p>
+            <>
+                <p>{`Not currently listening to anything! Check back later :^)`}</p>
+                <Photo 
+                image="https://smiski.com/e/wp-content/uploads/2019/09/img_yoga_06.png"
+                alt="smiski toe touch"
+                width={300}
+                height={300}/>
+            </>
         )
     };
 

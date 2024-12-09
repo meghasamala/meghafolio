@@ -1,10 +1,96 @@
-.now h2 {
+.now {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .topDiv {
+    margin-left: 25%;
+    margin-right: 25%;
+} */
+
+.topDiv h2 {
     padding: 10px;
-    margin-left: 40%;
-    margin-right: 40%;
+    /* margin-left: 40%;
+    margin-right: 40%; */
     background-color: var(--pink);
+    flex-basis: content;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.titleBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .now ul {
+    padding: 0px;
     list-style: none;
+}
+
+.nowGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 15px;
+    padding-bottom: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.nowGrid > div {
+    background-color: var(--green);
+    padding: 5px;
+    margin: 20px;
+}
+
+.nowGrid p, .nowGrid h2, .nowGrid h3{
+    padding: 10px;
+    margin: 0px;
+}
+
+.nowGrid div div {
+    padding: 0px;
+}
+
+.nowGrid li{
+    padding: 5px;
+}
+
+.nowTitleBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.nowTitleBox h3 {
+    /* margin-right: 150px;
+    margin-left: 150px; */
+    /* background-color: var(--pink); */
+    flex-basis: content;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .nowGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* phones */
+@media screen and (max-width: 600px) {
+    .nowGrid {
+        grid-template-columns: 1fr;
+    }
+
 }

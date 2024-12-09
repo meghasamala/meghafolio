@@ -8,8 +8,10 @@ const Projects = () => {
     return (
         <main className={styles.projects}>
             <div className={styles.topDiv}>
-                <h2 className="title">Projects</h2>
-                <p>Here are a few of the projects I&apos;ve worked on over the past few years:</p>
+                <div className={styles.titleBox}>
+                    <h2 className="title">Projects</h2>
+                </div>
+                <p>Here are some projects I&apos;ve worked on over the past few years:</p>
             </div>
             <div className={styles.projectsDiv}>
                 {projects.map((project) => 

@@ -7,7 +7,9 @@ const About = () => {
     return (
         <main className={styles.about}>
             <div className={styles.bigDiv}>
-                <h2>About Me</h2>
+                <div className={styles.titleBox}>
+                    <h2>About Me</h2>
+                </div>
                 <div className={styles.aboutDiv}>
                     <Photo image={"/IMG_1383.jpg"} width={400} height={300} alt="a picture of me in new york"/>
                     <p id="personal-info">
