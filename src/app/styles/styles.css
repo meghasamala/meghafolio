@@ -180,6 +180,10 @@ footer {
 
 /* phones */
 @media screen and (max-width: 600px) {
+  html {
+    zoom: .8;
+  }
+  
   header {
     flex-wrap: wrap;
     flex-direction: column;
