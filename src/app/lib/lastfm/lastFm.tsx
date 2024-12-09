@@ -11,7 +11,7 @@ const lastfm = ({method} : {method : string}, {limit} : {limit : number}) => {
     const [lfData, updateLfData] = useState();
 
     useEffect(() => {
-
+        console.log(username, apiKey);
         fetch(`https://ws.audioscrobbler.com/2.0/?method=${method}&user=${username}&api_key=${apiKey}&format=json&limit=${limit}`)
         .then(response => {
             if (response.ok) {
