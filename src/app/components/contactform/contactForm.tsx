@@ -66,14 +66,16 @@ const ContactForm = () => {
                 </form>
             )} 
             {status === 'ok' && visibleMessage && (
-                <div className={styles.success}>
+                <div className={styles.message}>
                     <SuccessMessage />
                     <Button type="button" name="Send Another" onclick={backToForm}/>
                 </div>
             )}
             {status === 'error' && (
-                <div>
-                    <h3>Oops!</h3>
+                <div className={styles.message}>
+                    <div className="messageTitleBox">
+                        <h3>Oops!</h3>
+                    </div>
                     <p>An error occurred during message submission!</p>
                     <p>Please try sending a message again later.</p>
                     <p>In the meantime, check out the other pages of my site, or click the links below!</p>
