@@ -57,8 +57,8 @@ const ContactForm = () => {
                     <div className={styles.formFields}>
                         <label htmlFor="name">Name:</label><br/>
                         <input type="text" id="name" name="name" required /><br/>
-                        <label htmlFor="email">Email:</label><br/>
-                        <input type="email" id="email" name="email" required /><br/>
+                        <label htmlFor="email">{`Email (Optional):`}</label><br/>
+                        <input type="email" id="email" name="email" /><br/>
                         <label htmlFor="message">Message:</label><br/>
                         <textarea id="message" name="message" required /><br/>
                     </div>
