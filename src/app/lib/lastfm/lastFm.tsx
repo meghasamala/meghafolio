@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 const lastfm = ({method} : {method : string}, {limit} : {limit : number}) => {
     const username = "megsamala"
-    const apiKey = "68e96bea00f030448438fffb9eb46cb4"
+    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
     const [lfData, updateLfData] = useState();
 
     useEffect(() => {
