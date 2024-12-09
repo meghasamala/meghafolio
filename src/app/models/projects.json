@@ -21,5 +21,12 @@
         "image": "/code-quiz-img.png",
         "repo": "https://github.com/meghasamala/code-quiz",
         "deploy": "https://meghasamala.github.io/code-quiz/"
+    },
+    {
+        "name": "CSSFolio",
+        "desc": "A portfolio page featuring my projects, styled with CSS Grid and Flex.",
+        "tech": "HTML, CSS",
+        "image": "/cssfolio.png",
+        "repo": "https://github.com/meghasamala/cssfolio"
     }
 ]
