@@ -4,19 +4,17 @@ import React, { useState } from "react";
 // import Form from "next/form";
 import Button from "../button/button";
 import styles from "../../(pages)/contact/contact.module.css"
-import { useRouter } from "next/navigation";
 import SuccessMessage from "../successMessage/successMessage";
 
 const ContactForm = () => {
     // https://opennext.js.org/netlify/forms
     // https://github.com/netlify-templates/next-platform-starter/blob/main/components/feedback-form.jsx
 
-    const router = useRouter();
-
     const [status, setStatus] = useState<any>(null);
     const [error, setError] = useState<any>(null);
 
-    const [visible, setVisible] = useState(true)
+    const [visibleForm, setVisibleForm] = useState(true)
+    const [visibleMessage, setVisibleSuccess] = useState(false)
 
     const handleFormSubmit = async (event: { preventDefault: () => void; target: any; }) => {
         event.preventDefault();
@@ -30,12 +28,13 @@ const ContactForm = () => {
             });
             if (res.status === 200) {
                 setStatus('ok');
-                setVisible(false);
+                setVisibleForm(false);
+                setVisibleSuccess(true)
             } else {
                 setStatus('error');
                 setError(`${res.status} ${res.statusText}`);
                 {console.log(error)}
-                setVisible(false);
+                setVisibleForm(false);
             }
         } catch (e) {
             setStatus('error');
@@ -45,12 +44,13 @@ const ContactForm = () => {
     };
 
     const backToForm = () => {
-        router.back()
+        setVisibleForm(true)
+        setVisibleSuccess(false)
     }
 
     return (
         <div className={styles.formDiv}>
-            {visible && (
+            {visibleForm && (
                 <form id="form" className={styles.form} method="POST" onSubmit={handleFormSubmit}>
                 <p>You can contact me by sending a message here:</p>
                 <input type="hidden" name="form-name" value="contact" />
@@ -65,8 +65,8 @@ const ContactForm = () => {
                     <Button type="submit" name="Send Message"/>
                 </form>
             )} 
-            {status === 'ok' && (
-                <div id="success-message">
+            {status === 'ok' && visibleMessage && (
+                <div className={styles.success}>
                     <SuccessMessage />
                     <Button type="button" name="Send Another" onclick={backToForm}/>
                 </div>

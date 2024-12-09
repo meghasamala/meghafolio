@@ -122,3 +122,18 @@
 .form textarea {
     height: 100px;
 }
+
+.success {
+    flex-basis: content;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-bottom: 10px;
+}
+
+.successTitleBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
