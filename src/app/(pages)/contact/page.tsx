@@ -13,7 +13,6 @@ const Contact = () => {
                     <div className={styles.titleBox}>
                         <h2>Contact</h2>
                     </div>
-                    <p>You can contact me by sending a message here:</p>
                 </div>
 
                 <div className={styles.formTotal}>
