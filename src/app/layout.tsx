@@ -11,7 +11,8 @@ const fraunces = Fraunces({
 })
  
 export const viewport: Viewport = {
-  width: 'device-width'
+  width: 'device-width',
+  initialScale: 0
 }
 
 // free font from: https://authentic.website/
