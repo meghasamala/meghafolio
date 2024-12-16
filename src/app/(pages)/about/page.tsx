@@ -22,7 +22,6 @@ const About = () => {
                     </p>
                 </div>
             </div>
-        
         </main>
     )
 }

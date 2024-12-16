@@ -8,18 +8,6 @@
         "path": "/projects"
     },
     {
-        "name": "Now",
-        "path": "/now"
-    },
-    {
-        "name": "Favorites",
-        "path": "/favorites"
-    },
-    {
-        "name": "Travels",
-        "path": "/travels"
-    },
-    {
         "name": "Contact",
         "path": "/contact"
     }

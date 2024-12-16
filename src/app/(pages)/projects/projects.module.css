@@ -1,22 +1,37 @@
 .projects {
     flex: 1;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    /* flex-wrap: wrap;
+    flex-direction: column; */
     justify-content: center;
 
 }
-.projectsDiv{
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    /* column-gap: 50px; */
+.bigDiv {
+    /* flex: 1; */
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    /* margin-top: 10px; */
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    /* margin-bottom: 5px; */
+   flex-basis: 700px;
+    /* flex-basis: content;
+    flex-grow: 0;
+    flex-shrink: 0; */
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+}
+
+.projectsDiv{
     padding-bottom: 15px;
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+    flex-basis: content;
+    flex-grow: 0;
 }
 
 .topDiv {
@@ -36,7 +51,7 @@
     flex-basis: content;
     flex-grow: 0;
     flex-shrink: 0;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 
@@ -53,7 +68,7 @@
     /* background-color: aliceblue; */
     /* margin-left: 30px;
     margin-right: 30px; */
-    margin: 20px;
+    /* margin: 20px; */
     /* width: max-content; */
 }
 
@@ -89,6 +104,11 @@
 
 .project a:hover {
     background-color: var(--pink);
+}
+
+.projButton {
+    display: flex;
+    justify-content: center;
 }
 
 /* tablets */

@@ -1,40 +1,41 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 import React, { useState } from "react";
-import Photo from "../photo/photo";
+import Project from "../project/project";
 import Button from "../button/button";
 
 // reference used: https://www.newline.co/@andreeamaco/react-carousel-building-the-component-from-scratch-vs-using-a-library--7da468d4
 
-const Carousel = ({ pics } : {pics : any}) => {
+const Carousel = ({ projects } : {projects : any}) => {
 
-    const [currentPic, setPic] = useState(0);
-    const len = pics.length
+    const [currentProject, setProject] = useState(0);
+    const len = projects.length
 
     const forward = () => {
-        const nextPic = currentPic === len - 1 ? 0 : currentPic + 1;
-        setPic(nextPic);
+        const nextProject = currentProject === len - 1 ? 0 : currentProject + 1;
+        setProject(nextProject);
     }
 
     const backward = () => {
-        const prevPic = currentPic === 0 ? len - 1 : currentPic - 1;
-        setPic(prevPic);
+        const prevProject = currentProject === 0 ? len - 1 : currentProject - 1;
+        setProject(prevProject);
     }
 
     return (
         <>
             <div id="carousel">
-                {pics.map((pic:any, index:number) => {
+                {projects.map((project:any, index:number) => {
                     return (
                         <div key={index}>
                             {
-                            index === currentPic &&
-                            <Photo
-                            image={pic.image}
-                            alt={pic.alt}
-                            desc={pic.desc}
-                            width={pic.width}
-                            height={pic.height} />
+                            index === currentProject &&
+                            <Project
+                            name={project.name}
+                            desc={project.desc}
+                            tech={project.tech}
+                            image={project.image}
+                            repo={project.repo}
+                            deploy={project.deploy} />
                             }                   
                         </div>
                         
