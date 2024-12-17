@@ -10,7 +10,7 @@ const Button = (props: ButtonProps) => {
     const { name, type, onclick } = props;
 
     return(
-        <button type={type} onClick={onclick}>{name}</button>
+        <button className="text-[black] bg-green text-[1em] m-[5px] p-[5px] border-none hover:bg-pink font-sans" type={type} onClick={onclick}>{name}</button>
     )
 }
 

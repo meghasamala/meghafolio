@@ -28,11 +28,11 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="en">
+    <html lang="en" className="m-0 p-0 flex flex-col min-h-full min-w-fit max-[640px]:scale-70">
       <Head>
         <title>Megha&apos;s Personal Website</title>
       </Head>
-      <body className={`${authenticSans.variable} ${fraunces.variable}`}>
+      <body className={`${authenticSans.variable} ${fraunces.variable} m-0 p-0 flex flex-col min-h-full min-w-fit flex-1 h-full text-center bg-[#e6e6e6] font-sans` }>
         {children}
       </body>
     </html>

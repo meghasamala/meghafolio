@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 // import Form from "next/form";
 import Button from "../button/button";
-import styles from "../../(pages)/contact/contact.module.css"
+// import styles from "../../(pages)/contact/contact.module.css"
 import SuccessMessage from "../successMessage/successMessage";
 
 const ContactForm = () => {
@@ -49,36 +49,36 @@ const ContactForm = () => {
     }
 
     return (
-        <div className={styles.formDiv}>
+        <div className="flex justify-center">
             {visibleForm && (
-                <form id="form" className={styles.form} method="POST" onSubmit={handleFormSubmit}>
-                <p>You can contact me by sending a message here:</p>
+                <form id="form" className="basis-[content] grow-0 shrink-0 pb-2.5" method="POST" onSubmit={handleFormSubmit}>
+                <p className="m-0 p-2.5">You can contact me by sending a message here:</p>
                 <input type="hidden" name="form-name" value="contact" />
-                    <div className={styles.formFields}>
+                    <div className="bg-green m-2.5 p-5">
                         <label htmlFor="name">Name:</label><br/>
-                        <input type="text" id="name" name="name" required /><br/>
+                        <input className="w-[300px] m-2.5 p-2.5 font-sans h-[30px] border-transparent focus:outline-none" type="text" id="name" name="name" required /><br/>
                         <label htmlFor="email">{`Email (Optional):`}</label><br/>
-                        <input type="email" id="email" name="email" /><br/>
+                        <input className="w-[300px] m-2.5 p-2.5 font-sans h-[30px] border-transparent focus:outline-none" type="email" id="email" name="email" /><br/>
                         <label htmlFor="message">Message:</label><br/>
-                        <textarea id="message" name="message" required /><br/>
+                        <textarea className="w-[300px] m-2.5 p-2.5 font-sans h-[100px] border-transparent focus:outline-none" id="message" name="message" required /><br/>
                     </div>
                     <Button type="submit" name="Send Message"/>
                 </form>
             )} 
             {status === 'ok' && visibleMessage && (
-                <div className={styles.message}>
+                <div className="basis-[content] grow-0 shrink-0 pb-2.5">
                     <SuccessMessage />
                     <Button type="button" name="Send Another" onclick={backToForm}/>
                 </div>
             )}
             {status === 'error' && (
-                <div className={styles.message}>
-                    <div className="messageTitleBox">
-                        <h3>Oops!</h3>
+                <div className="basis-[content] grow-0 shrink-0 pb-2.5">
+                    <div className="flex flex-row justify-center mt-[25px] mb-2.5">
+                        <h3 className="m-0 p-2.5 bg-pink basis-[content] grow-0 shrink-0 font-serif font-light">Oops!</h3>
                     </div>
-                    <p>An error occurred during message submission!</p>
-                    <p>Please try sending a message again later.</p>
-                    <p>In the meantime, check out the other pages of my site, or click the links below!</p>
+                    <p className="m-0 p-2.5">An error occurred during message submission!</p>
+                    <p className="m-0 p-2.5">Please try sending a message again later.</p>
+                    <p className="m-0 p-2.5">In the meantime, check out the other pages of my site, or click the links below!</p>
                 </div>
             )}
         </div>

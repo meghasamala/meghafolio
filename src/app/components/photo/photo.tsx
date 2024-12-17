@@ -15,6 +15,7 @@ const Photo = (props: PhotoProps) => {
     return (
         <div>
             <Image 
+                className="!max-w-full !h-auto"
                 src={image}
                 width={width}
                 height={height}
