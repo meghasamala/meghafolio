@@ -32,7 +32,7 @@ const RootLayout = ({
       <Head>
         <title>Megha&apos;s Personal Website</title>
       </Head>
-      <body className={`${authenticSans.variable} ${fraunces.variable} m-0 p-0 flex flex-col min-h-full min-w-fit flex-1 h-full text-center bg-[#e6e6e6] font-sans ` }>
+      <body className={`${authenticSans.variable} ${fraunces.variable} m-0 p-0 flex flex-col min-h-full min-w-fit flex-1 h-full text-center bg-[#e6e6e6] font-sans cursor-auto` }>
         {children}
       </body>
     </html>

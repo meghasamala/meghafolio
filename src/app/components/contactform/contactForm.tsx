@@ -54,11 +54,11 @@ const ContactForm = () => {
                 <input type="hidden" name="form-name" value="contact" />
                     <div className="bg-green m-2.5 p-5">
                         <label htmlFor="name">Name:</label><br/>
-                        <input className="w-[300px] m-2.5 p-2.5 font-sans h-[30px] border-transparent focus:outline-none" type="text" id="name" name="name" required /><br/>
+                        <input className="w-[300px] m-2.5 p-2.5 font-sans h-[30px] border-transparent focus:outline-none cursor-text" type="text" id="name" name="name" required /><br/>
                         <label htmlFor="email">{`Email (Optional):`}</label><br/>
-                        <input className="w-[300px] m-2.5 p-2.5 font-sans h-[30px] border-transparent focus:outline-none" type="email" id="email" name="email" /><br/>
+                        <input className="w-[300px] m-2.5 p-2.5 font-sans h-[30px] border-transparent focus:outline-none cursor-text" type="email" id="email" name="email" /><br/>
                         <label htmlFor="message">Message:</label><br/>
-                        <textarea className="w-[300px] m-2.5 p-2.5 font-sans h-[100px] border-transparent focus:outline-none" id="message" name="message" required /><br/>
+                        <textarea className="w-[300px] m-2.5 p-2.5 font-sans h-[100px] border-transparent focus:outline-none cursor-text" id="message" name="message" required /><br/>
                     </div>
                     <Button type="submit" name="Send Message"/>
                 </form>

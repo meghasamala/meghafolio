@@ -16,6 +16,11 @@ module.exports = {
         'green': '#d2ff81',
         'pink': '#FFA0ED',
       },
+      cursor: {
+        'auto': 'url(/icons8-cursor-24.png), auto',
+        'pointer': 'url(/icons8-pointer-24.png), pointer',
+        'text': 'url(/icons8-text-cursor-24.png), text'
+      }
     },
   },
   plugins: [],
