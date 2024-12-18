@@ -141,12 +141,12 @@ header nav a:hover {
 } */
 
 /* phones */
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   html {
     zoom: .7;
   }
 
-  header {
+  /* header {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
@@ -159,5 +159,5 @@ header nav a:hover {
 
   .landing-div h1 {
     font-size: 1.7em;
-  }
-} */
+  } */
+}
