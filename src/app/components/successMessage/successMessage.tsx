@@ -1,5 +1,4 @@
 import React from "react";
-// import styles from "../../(pages)/contact/contact.module.css";
 
 const SuccessMessage = () => {
     return(

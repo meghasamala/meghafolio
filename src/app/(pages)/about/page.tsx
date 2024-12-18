@@ -1,6 +1,5 @@
 import React from "react";
 import Photo from "@/app/components/photo/photo";
-// import styles from "./about.module.css";
 
 const About = () => {
 
@@ -8,7 +7,7 @@ const About = () => {
         <main className="m-0 p-0 flex-1 h-full flex justify-center">
             <div className="w-[450px] mb-[30px]">
                 <div className="flex flex-row justify-center">
-                    <h2 className="bg-pink basis-[content] grow-0 shrink-0 mb-5 p-2.5 font-serif font-light">About Me</h2>
+                    <h2 className="bg-pink basis-[content] grow-0 shrink-0 mt-5 p-2.5 font-serif font-light">About Me</h2>
                 </div>
                 <div className="bg-green p-[30px]">
                     <Photo image={"/IMG_1383.jpg"} width={400} height={300} alt="a picture of me in new york"/>

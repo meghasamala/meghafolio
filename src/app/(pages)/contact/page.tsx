@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ContactForm from "@/app/components/contactform/contactForm";
-// import styles from "./contact.module.css"
+
 
 const Contact = () => {
 
@@ -11,14 +11,11 @@ const Contact = () => {
             <div className="w-[450px] mb-[30px]">
                 <div className="flex flex-col">
                     <div className="flex flex-row justify-center">
-                        <h2 className="bg-pink basis-[content] grow-0 shrink-0 mt-5 mb-0 p-2.5 font-serif font-light">Contact</h2>
+                        <h2 className="bg-pink basis-[content] grow-0 shrink-0 mt-5 p-2.5 font-serif font-light">Contact</h2>
                     </div>
                 </div>
 
                 <div className="m-[5px]">
-                    {/* <div className={styles.formTitleBox}>
-                        <h3>Message</h3>
-                    </div> */}
                     <ContactForm />
                     <p className="m-0 p-2.5">You can learn more about my work/projects by clicking the links below:</p>
                         {/* icons downloaded from icons8 website  */}

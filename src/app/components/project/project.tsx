@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Photo from "../photo/photo";
-// import styles from "../../(pages)/projects/projects.module.css"
 
 // https://react.dev/learn/typescript
 interface ProjectProps {

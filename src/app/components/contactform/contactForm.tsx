@@ -1,9 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 import React, { useState } from "react";
-// import Form from "next/form";
 import Button from "../button/button";
-// import styles from "../../(pages)/contact/contact.module.css"
 import SuccessMessage from "../successMessage/successMessage";
 
 const ContactForm = () => {
