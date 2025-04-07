@@ -11,7 +11,7 @@
         "desc": "A personal site created as my final project for CS601, which utilizes the technologies learned in class and expands upon them through the usage of Next.js, the LastFM API, and more.",
         "tech": "Typescript, Next.js, React, HTML, CSS, Node.js, Netlify",
         "image": "/meghasite.png",
-        "repo": "https://github.com/meghasamala/cs669/blob/main/project.sql",
+        "repo": "https://github.com/meghasamala/meghasite",
         "deploy": "https://meghasite.netlify.app/"
     },
     {
